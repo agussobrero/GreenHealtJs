@@ -1,0 +1,337 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+@import "../base/colores";
+
+.footer-up{
+    border-top: none;
+    padding-top: 1.5rem;
+    height: 80vh;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @include movil{
+        height: 45vh;
+    }
+
+    @include tablet{
+        height: 60vh;
+    }
+
+    &__h2{
+        text-align: center;
+        font-size: 60px;
+        color: $verde-sec;
+
+        @include movil{
+            font-size: 5vh;
+        }
+
+        @include tablet{
+            font-size: 7vh;
+        }
+    }
+
+    &__img{
+        padding: 2rem;
+        margin-top: 2rem;
+        margin-left: 7.5rem;
+        width: 85%;
+
+        @include movil{
+            padding: 0rem;
+            margin: 1rem 1.8rem;
+            right: 50%;
+        }
+
+        @include tablet{
+            margin-left: 4rem;
+        }
+    }
+}
+
+.footer-mid{
+    background-color: $fondo-sec;
+    border-top: none;
+    padding-top: 1.5rem;
+    padding: 25px;
+    height: 75vh;
+    width: 100%;
+
+    @include movil{
+        padding: 0rem;
+        margin: 0rem;
+        height: 155vh;
+        width: auto;
+    }
+
+    @include tablet{
+        height: 90vh;
+    }
+
+    &__h2{
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        color: $verde-prin;
+
+        @include movil{
+            padding: 1.2rem 0.5rem;
+            margin-bottom: 18rem;
+            font-size: 4.5vh;
+        }
+
+        @include tablet{
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__cont{
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &__row{
+
+            @include movil{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            &__col{
+                border-right: none;
+                
+
+
+            }
+        }
+    }
+}
+
+.footer-form{
+    margin-top: 3rem;
+    width: 60%;
+    height: 18%;
+
+    &__cont{
+
+        &__div{
+
+            &__btn{
+                margin-top: 0.5rem;
+                background-color: $verde-prin;
+                border: none;
+                color: white;
+                &:hover{
+                    border: 2px solid #104F55;
+                    background-color: rgba(365,365,365,0.5);
+                    cursor: pointer;
+                    color: #104F55;
+                    opacity: .8;
+                    transition: .3s;
+                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                }
+            }
+
+        }
+    }
+}
+
+
+.footer-down{
+    border-top: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 40vh;
+    width: 100%;
+
+    @include movil{
+        padding: 0rem;
+        margin: 0rem;
+        height: 40vh;
+        margin-top: 1rem;
+    }
+
+    @include tablet{
+        padding: 0rem;
+        margin: 0rem;
+        height: 70vh;
+        margin-top: 1rem;
+    }
+
+    &__cont{
+        align-items: center;
+        border-bottom: none;
+        padding: 1rem;
+
+        @include movil{
+            width: auto;
+        }
+
+        &__div{
+            align-items: center;
+            padding-left: 11rem;
+
+            @include movil{
+                padding: 0rem;
+                align-self: center;
+            }
+
+            @include tablet{
+                padding: 5rem 3rem;
+            }
+            
+            &__h3{
+                text-align: left;
+                font-size: 30px;
+                padding-bottom: 1rem;
+
+                @include movil{
+                    text-align: center;
+                    font-size: 4.5vh;
+                }
+            }
+
+            &__p{
+                padding-right: 12rem;
+
+                @include movil{
+                    text-align: center;
+                    padding: 0rem;
+                }
+
+                @include tablet{
+                    padding: 0rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+
+    &__img{
+
+        &__img{
+            padding: 2rem;
+            margin-left: 5.5rem;
+            width: 60%;
+
+            @include tablet{
+                padding: 0rem;
+                margin: 0rem;
+                width: 90%;
+            }
+        }
+    }
+}
+
+.footer-map{
+    padding-top: 1rem;
+    height: 80vh;
+    width: 100%;
+    margin-top: 20rem;
+
+
+    @include movil{
+        margin-top: 3rem;
+        height: 53vh;
+        padding: 0rem;
+    }
+
+    @include tablet{
+        padding: 0rem;
+        margin: 0rem;
+        height: 60vh;
+        margin-top: 1rem;
+    }
+
+    &__cont{
+        align-items: center;
+        padding: 1rem;
+        padding-bottom: 4rem;
+        width: 100%;
+
+        @include movil{
+            padding: 0rem;
+            margin: 0rem;
+            transform: scale(0.6);
+
+            @include tablet{
+                padding-left: 25rem;
+            }
+        }
+
+        &__map{
+            padding-left: 9rem;
+
+            @include movil{
+                padding: 0rem;
+            }
+
+            @include tablet{
+                transform: scale(0.7);
+                padding-left: 0rem;
+                padding-right: 1rem;
+            }
+        }
+        
+        &__div{
+            align-items: center;
+            padding-left: 11rem;
+            margin-left: 8rem;
+
+            @include movil{
+                padding: 0rem;
+                margin-top: 0rem;
+                margin-left: 0rem;
+                height: 15vh;
+            }
+
+            @include tablet{
+                padding-left: 0rem;
+                margin-left: 0rem;
+            }
+            
+            &__h3{
+                text-align: left;
+                font-size: 30px;
+                padding-bottom: 1rem;
+
+                @include movil{
+                    text-align: center;
+                    font-size: 7.5vh;
+                }
+            }
+    
+            &__p{
+                padding-right: 12rem;
+
+                @include movil{
+                    text-align: center;
+                    font-size: 4vh;
+                    padding: 0rem;
+                }
+
+                @include tablet{
+                    padding: 0rem;
+                    margin-right: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 320px){
+    .disapp{
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .disapp1{
+    display: none;
+    }
+}
+

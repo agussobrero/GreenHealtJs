@@ -1,0 +1,41 @@
+@import "../abstracts/variables";
+@import "../base/colores";
+
+
+%section-hero-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    height: 50px;
+    background-color: $verde-sec;
+}
+
+%section-hero-img-index{
+    width: 90%;
+    align-self: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 3px 3px $verde-prin;
+    border-radius: 8px;
+    margin-left: 4rem;
+}
+
+%section-hero-p-index{
+    font-size: 4vh;
+    font-family: $font-p;
+    align-self: center;
+    color: white;
+}
+
+%section-hero-span-index{
+    background-color: $verde-prin;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 3px 3px $verde-sec;
+    cursor: pointer;
+}
+

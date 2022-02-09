@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+
+
+@mixin movil {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+    
+}
+@mixin tablet {
+    @media screen and (min-width: 321px) and (max-width: 768px) {
+        @content;
+    }
+}

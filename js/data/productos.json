@@ -1,0 +1,64 @@
+{
+    "productos": [
+        {
+            "id": 0,
+            "categoria": "crema",
+            "nombre": "CreamCbd",
+            "tamaño": "chico",
+            "precio": 1800,
+            "cantidad": 1,
+            "stock": 15,
+            "url": "../images/card3.png"
+        },
+        {
+            "id": 1,
+            "categoria": "crema",
+            "nombre": "CreamCbd",
+            "tamaño": "grande",
+            "precio": 2000,
+            "cantidad": 1,
+            "stock": 20,
+            "url": "../images/card3.png"
+        },
+        {
+            "id": 2,
+            "categoria": "aceite",
+            "nombre": "OilCbd",
+            "tamaño": "chico",
+            "precio": 1500,
+            "cantidad": 1,
+            "stock": 30,
+            "url": "../images/card1.png"
+        },
+        {
+            "id": 3,
+            "categoria": "aceite",
+            "nombre": "OilCbd",
+            "tamaño": "grande",
+            "precio": 1800,
+            "cantidad": 1,
+            "stock": 35,
+            "url": "../images/card1.png"
+        },
+        {
+            "id": 4,
+            "categoria": "pet",
+            "nombre": "PetCapsules",
+            "tamaño": "chico",
+            "precio": 2500,
+            "cantidad": 1,
+            "stock": 18,
+            "url": "../images/card2.png"
+        },
+        {
+            "id": 5,
+            "categoria": "pet",
+            "nombre": "PetCapsules",
+            "tamaño": "grande",
+            "precio": 2800,
+            "cantidad": 1,
+            "stock": 15,
+            "url": "../images/card2.png"
+        }
+    ]
+}

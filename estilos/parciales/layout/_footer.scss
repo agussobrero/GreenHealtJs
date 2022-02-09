@@ -1,0 +1,104 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+@import "../base/colores";
+
+.footer-last{
+    margin-top: 0rem;
+    align-items: center;
+    height: 50vh;
+    background-color: $obscuro;
+
+    @include movil{
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img-redes{
+        height: 5vh;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        @include movil{
+            margin-top: 1.1rem;
+        }
+
+        &__h2{
+            font-size: 3vh;
+            margin-left: 1rem;
+        }
+
+        &__div{
+            position: absolute;
+            transform: scale(0.6);
+            opacity: 0.9;
+            padding-left: 5rem;
+            right: -8%;
+            top: -40%;
+
+            @include movil{
+                right: -13%;
+            }
+
+            @include tablet{
+                right: -15%;
+            }
+        }
+    }
+
+    &__div{
+        display: flex;
+        justify-content: space-around;
+
+        &__col{
+
+            &__h4{
+                font-size: 2.8vh;
+                font-weight: bolder;
+
+                @include movil{
+                    font-size: 2.5vh;
+                }
+            }
+
+            &__ul{
+                list-style: none;
+                padding: 0rem;
+                font-size: 2.3vh;
+
+                @include movil{
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+}
+
+.card{
+    background-color: $obscuro;
+
+    @include movil{
+        transform:scale(0.9);
+    }
+}
+.card-body{
+    background-color: $obscuro;
+
+    @include movil{
+        transform:scale(0.9);
+    }
+}
+
+.btn-footer{
+    background-color: $verde-prin;
+    padding: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    border-radius: 4px;
+
+    @include movil{
+        transform:scale(0.9);
+    }
+}

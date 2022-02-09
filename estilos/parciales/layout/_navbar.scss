@@ -1,0 +1,112 @@
+@import "../abstracts/variables";
+@import "../abstracts/placeholders";
+@import "../base/colores";
+@import "../abstracts/responsive";
+
+.mi-navbar{
+    background-color: $fondo-prin;
+    position: relative;
+
+    &__img{
+        height: 40px;
+        opacity: 0.7;
+        filter: invert(50%) sepia(15%) saturate(1128%) hue-rotate(51deg) brightness(96%) contrast(90%);
+        margin-left: 20px;
+        align-self: center;
+        z-index: 1;
+    }
+
+    &__brand{
+        font-size: 32px !important;
+        color: $verde-prin !important;
+        font-family: $font-p !important;
+        margin-left: 0.1rem;
+        
+        @include movil{
+            font-size: 5vh !important;
+        }
+
+        @include tablet{
+            margin-right: 0rem;
+            }
+    }
+
+    &__nav{
+
+        &__item{
+            font-size: 20px;
+            font-family: $font-p !important;
+            &:hover{
+                text-decoration: $verde-prin;
+                }
+
+            @include movil{
+                font-size: 2.5vh;
+                text-decoration: white;
+                transform: unset;
+                }
+
+            @include tablet{
+                align-items: center;
+                }
+            }
+        }
+}
+
+.mi-navbar-cont{
+
+    @include tablet{
+        width: 110%;
+        }
+}
+
+.col-auto{
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around; 
+        }
+}
+
+.nav-link:hover{
+    color: $verde-sec !important;
+} 
+
+.navbar-light .navbar-nav .nav-link{
+    color: $verde-prin;
+    font-family: $font-p;
+
+    @include movil{
+        &:hover{
+            color: white !important;
+            border-radius: 25px;
+            transform: scale(1.1);
+            }
+        }
+}
+
+.nav-icon{
+    height: 40px;
+    opacity: 0.7;
+    filter: invert(50%) sepia(15%) saturate(1128%) hue-rotate(51deg) brightness(96%) contrast(90%);
+}
+
+.nav-icon-brand{
+    height: 40px;
+    opacity: 0.7;
+    filter: invert(50%) sepia(15%) saturate(1128%) hue-rotate(51deg) brightness(96%) contrast(90%);
+    margin-left: 3rem;
+    position: absolute;
+    right: 93.5%;
+    top: 4.5%;
+    z-index: 1;
+    
+}
+
+.navbar-light .navbar-toggler{
+    color: $verde-prin;
+    border: none;
+
+}
+
